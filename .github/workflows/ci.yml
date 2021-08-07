@@ -1,0 +1,31 @@
+name: GitHub Actions Build and Deploy Demo
+# 定义触发事件的 git hook, 可以是单个 hook 名称或多个
+on:
+  push:
+    # 限定分支和标签
+    branches:
+      - master  
+
+# 表示要执行的一项或多项任务。      
+jobs:
+  build-and-deploy:
+    # 运行所需要的虚拟机环境
+    runs-on: ubuntu-latest
+    # 步骤
+    steps:
+      # 1. 获取源码， 这里需要将仓库代码检出到虚拟机实例中
+    - name: Checkout
+      uses: actions/checkout@master
+
+    - name: Install and Build 🔧
+          run: |
+            yarn
+            yarn build
+
+    - name: Deploy 
+      uses: JamesIves/github-pages-deploy-action@master
+      with:
+          # 为了让 GitHub触发重新构建页面，您必须使用存储库提供的GitHub令牌来提供操作, GITHUB_TOKEN 是系统默认提供的  不需要单独配置环境变量
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages 
+          FOLDER: dist 
