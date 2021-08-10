@@ -1,0 +1,150 @@
+
+// 原主题变量已弃用，以下是vdoing使用的变量，你可以在这个文件内修改它们。
+
+//***vdoing主题-变量***//
+
+// // 颜色
+ 
+// $bannerTextColor = #fff // 首页banner区(博客标题)文本颜色
+// $accentColor = #11A8CD
+// $arrowBgColor = #ccc
+// $badgeTipColor = #42b983
+// $badgeWarningColor = darken(#ffe564, 35%)
+// $badgeErrorColor = #DA5961
+
+// // 布局
+// $navbarHeight = 3.6rem
+// $sidebarWidth = 18rem
+// $contentWidth = 860px
+// $homePageWidth = 1100px
+// $rightMenuWidth = 230px // 右侧菜单
+
+// // 代码块
+// $lineNumbersWrapperWidth = 2.5rem
+
+// 浅色模式
+.theme-mode-light
+  --bodyBg: rgba(255,255,255,1)
+  --mainBg: rgba(255,255,255,1)
+  --sidebarBg: rgba(255,255,255,.8)
+  --blurBg: rgba(255,255,255,.9)
+  --textColor: #004050
+  --textLightenColor: #0085AD
+  --borderColor: rgba(0,0,0,.15)
+  // --codeBg: #f6f6f6
+  // --codeColor: #525252
+  // codeThemeLight()
+  // --codeBg: #252526
+  // --codeColor: #fff
+  --codeBg: #252526
+  --codeColor: #fff
+  codeThemeDark()
+
+// 深色模式
+.theme-mode-dark
+  --bodyBg: rgba(30,30,34,1)
+  --mainBg: rgba(30,30,34,1)
+  --sidebarBg: rgba(30,30,34,.8)
+  --blurBg: rgba(30,30,34,.8)
+  --textColor: rgb(140,140,150)
+  --textLightenColor: #0085AD
+  --borderColor: #2C2C3A
+  --codeBg: #252526
+  --codeColor: #fff
+  codeThemeDark()
+
+// 阅读模式
+.theme-mode-read
+  --bodyBg: rgba(245,245,213,1)
+  --mainBg: rgba(245,245,213,1)
+  --sidebarBg: rgba(245,245,213,.8)
+  --blurBg: rgba(245,245,213,.9)
+  --textColor: #004050
+  --textLightenColor: #0085AD
+  --borderColor: rgba(0,0,0,.15)
+  --codeBg: #282c34
+  --codeColor: #fff
+  codeThemeDark()
+
+
+/* 自定义主题 */
+mark {
+  text-shadow: -3px 0px 3px #fad52e, 3px 0px 3px #fad52e, 6px 0px 6px #fad52e, -6px 0px 6px #fad52e !important;
+  background: none;
+}
+
+h2{
+    display: inline-flex;
+    min-width: 56%;
+    padding: 0.5rem 1rem;
+    padding-bottom: 0.3em;
+    font-style: normal !important;
+    line-height: 1.25;
+    color: #157bae;
+    /* background: linear-gradient(#fff 80%, #ffb11b 35%); */
+    /* background: #181a21 !important; */
+    border-bottom: 3px #157bae solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0 !important;
+     padding-top: 0 !important;
+     margin-top:30px !important;
+    // border-bottom:2px solid #;
+
+}
+
+h3{
+  display: inline-flex;
+    min-width: 45%;
+    padding: 0.5rem 1rem;
+    padding-left: 20px;
+    font-style: normal !important;
+    line-height: 1.25;
+    color: #00a4a6;
+    /* background: #181a21 !important; */
+    border-bottom: 2px #00a4a6 solid;
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    margin-bottom: 0 !important;
+    padding-top: 4rem !important;
+}
+
+
+p>code{
+  padding: 0.1em !important;
+  margin:0 5px !important;
+  margin-top: 3px;
+  font-size: 0.92em;
+  font-weight: 400 !important;
+  border: 2px solid #666;
+  background: #ffc0cb !important;
+  color: #000 !important;
+  font-size: 102% !important;
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}
+
+.cardListContainer .card-list{
+      align-items: stretch;
+}
+.card-item{
+  flex-shrink: 0;
+  flex: 1;
+}
+
+.page{
+  background:#f4f4f4
+}
+
+.theme-vdoing-wrapper{border: 1px solid #d7dae2;box-shadow: rgba(0, 0, 0, 0.12) 0px 2px 4px, rgba(0, 0, 0, 0.04) 0px 0px 6px;}
+
+.footer{display:none}
+
+
+.demo-content{
+  background:#fff
+}
+.demo-block .description{
+  background: #282c34 !important;
+  color: #fff !important;
+}
