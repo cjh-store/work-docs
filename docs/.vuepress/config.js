@@ -3,7 +3,7 @@ module.exports = {
   title: "VuePress-Creator",
   description: "A lightweight creator for VuePress project.",
   base: "/",
-  dest:'../dist',
+  dest:'./dist',
   head: [["link", { rel: "icon", href: "/assets/logo.png" }]],
   markdown: {
     lineNumbers: false,
