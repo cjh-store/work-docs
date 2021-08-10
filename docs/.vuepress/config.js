@@ -2,7 +2,7 @@ module.exports = {
   theme: "vdoing", // 使用依赖包主题
   title: "VuePress-Creator",
   description: "A lightweight creator for VuePress project.",
-  base: "/",
+  base: "./",
   dest:'./dist',
   head: [["link", { rel: "icon", href: "/assets/logo.png" }]],
   markdown: {
