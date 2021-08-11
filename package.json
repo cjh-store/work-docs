@@ -11,18 +11,22 @@
   "author": "Feng L.H.",
   "license": "MIT",
   "devDependencies": {
-    "vuepress": "^1.5.2",
-    "vuepress-plugin-demo-container": "^0.2.0",
-    "vuepress-theme-vdoing": "^1.8.3",
-    "vuepress-plugin-thirdparty-search": "^1.0.2",
-    "vuepress-plugin-one-click-copy": "^1.0.2",
     "dayjs": "^1.9.7",
     "element-ui": "^2.15.4",
     "node-sass": "^4.11.0",
-    "sass-loader": "10.1.0"
+    "sass-loader": "10.1.0",
+    "vuepress": "^1.5.2",
+    "vuepress-plugin-demo-container": "^0.2.0",
+    "vuepress-plugin-one-click-copy": "^1.0.2",
+    "vuepress-plugin-thirdparty-search": "^1.0.2",
+    "vuepress-theme-vdoing": "^1.8.3"
   },
   "dependencies": {
-    "core-js": "^2.6.11"
+    "core-js": "^2.6.11",
+    "remixicon": "^2.5.0",
+    "vuex": "^3.6.2",
+    "vuex-pathify": "^1.5.1",
+    "vuex-persistedstate": "^4.0.0"
   },
   "creator": ">=2.0.0"
 }

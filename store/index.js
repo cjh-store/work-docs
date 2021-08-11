@@ -1,0 +1,34 @@
+/**
+ * @description 导入所有 vuex 模块，自动加入namespaced:true，用于解决vuex命名冲突，请勿修改。
+ */
+import Vue from 'vue'
+import Vuex from 'vuex'
+import createPersistedState from 'vuex-persistedstate'
+import pathify from 'vuex-pathify'
+
+Vue.use(Vuex)
+const files = require.context('./modules', false, /\.js$/)
+const modules = {}
+files.keys().forEach((key) => {
+    modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default
+})
+
+const dataState = createPersistedState({
+    key: 'appData',
+    paths: ['user', 'test'],
+})
+
+const store = new Vuex.Store({
+    modules,
+    plugins: [dataState, pathify.plugin],
+})
+
+Vue.mixin({
+    computed: {
+        themes() {
+            return this.$store.state.theme
+        },
+    },
+})
+
+export default store
