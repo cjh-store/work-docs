@@ -3,8 +3,9 @@
  */
 import Vue from 'vue'
 import Vuex from 'vuex'
-import createPersistedState from 'vuex-persistedstate'
 import pathify from 'vuex-pathify'
+
+
 
 Vue.use(Vuex)
 const files = require.context('./modules', false, /\.js$/)
@@ -13,22 +14,11 @@ files.keys().forEach((key) => {
     modules[key.replace(/(\.\/|\.js)/g, '')] = files(key).default
 })
 
-const dataState = createPersistedState({
-    key: 'appData',
-    paths: ['user', 'test'],
-})
 
 const store = new Vuex.Store({
     modules,
-    plugins: [dataState, pathify.plugin],
+    plugins: [pathify.plugin],
 })
 
-Vue.mixin({
-    computed: {
-        themes() {
-            return this.$store.state.theme
-        },
-    },
-})
 
 export default store

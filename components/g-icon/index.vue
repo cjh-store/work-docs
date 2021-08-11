@@ -1,6 +1,6 @@
 <template>
   <el-image v-if="isExternal" :src="icon" class="img-icon" v-on="$listeners" />
-  <svg
+  <!-- <svg
     v-else-if="isSvg"
     :style="{ color }"
     :class="['g-icon', icon, 'w-' + size, 'h-' + size]"
@@ -8,15 +8,8 @@
     v-on="$listeners"
   >
     <use :xlink:href="'#' + icon" />
-  </svg>
-  <!-- <svg
-    v-else-if="isDefaultSvg"
-    :style="{ color }"
-    :class="['g-icon', icon, 'f-' + size]"
-    v-on="$listeners"
-  >
-    <use :xlink:href="remixIconPath + '#ri-' + icon"></use>
   </svg> -->
+   <span v-else-if="isSvg"  :class="['g-icon','iconfont', icon]" :style="{fontSize:size+'px'}"></span>
   <i
     v-else
     :style="{ color }"
@@ -44,15 +37,9 @@
       },
       size: {
         type: [String, Number],
-        default:50
       },
       color: {
         type: String,
-      },
-      // 是否使用本地库Remix图标
-      isDefaultSvg: {
-        type: Boolean,
-        default: false,
       },
       className: {
         type: String,
