@@ -85,7 +85,7 @@ module.exports = {
   locales: {
     "/": {
       lang: "zh-CN",
-      title: "Demo Container",
+      title: "开发文档",
       description: "用于编写 vue 组件示例的 vuepress 插件",
     },
   },
