@@ -5,7 +5,7 @@ module.exports = [
     link: "/pages/ace56b/",
     items: [
       { text: "开发规范", link: "/pages/ace56b/" },
-      { text: "admin-template", link: "/pages/8691ad/" },
+      // { text: "admin-template", link: "/pages/8691ad/" },
       { text: "uni-template", link: "/pages/637f02/" },
     ],
   },
@@ -14,7 +14,7 @@ module.exports = [
     link: "/pages/8a6c54/",
     items: [
       { text: "git常见命令", link: "/pages/8a6c54/" },
-      { text: "vscode代码片段", link: "https://cjh-github.github.io/vscode_snippets" },
+      { text: "vscode代码片段", link: "https://cjh-store.github.io/vscode-snippets/" },
       { text: "变量命名网站", link: "https://unbug.github.io/codelf" },
     ],
   },
