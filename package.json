@@ -23,6 +23,7 @@
   },
   "dependencies": {
     "core-js": "^2.6.11",
+    "loadsh": "^0.0.4",
     "remixicon": "^2.5.0",
     "vuex": "^3.6.2",
     "vuex-pathify": "^1.5.1"
