@@ -5,7 +5,7 @@ module.exports = [
     link: "/pages/ace56b/",
     items: [
       { text: "开发规范", link: "/pages/ace56b/" },
-      // { text: "admin-template", link: "/pages/8691ad/" },
+      { text: "admin-template", link: "/pages/48b65a/" },
       { text: "uni-template", link: "/pages/637f02/" },
     ],
   },
