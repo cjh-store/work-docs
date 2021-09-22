@@ -8929,6 +8929,11 @@ vuex@^3.6.2:
   resolved "https://registry.nlark.com/vuex/download/vuex-3.6.2.tgz#236bc086a870c3ae79946f107f16de59d5895e71"
   integrity sha1-I2vAhqhww655lG8QfxbeWdWJXnE=
 
+vxe-table@3:
+  version "3.3.12"
+  resolved "https://registry.nlark.com/vxe-table/download/vxe-table-3.3.12.tgz#5f624915e5c0834a3e89caa227db9d36d1d7bd1e"
+  integrity sha1-X2JJFeXAg0o+icqiJ9udNtHXvR4=
+
 watchpack-chokidar2@^2.0.1:
   version "2.0.1"
   resolved "https://registry.nlark.com/watchpack-chokidar2/download/watchpack-chokidar2-2.0.1.tgz#38500072ee6ece66f3769936950ea1771be1c957"
@@ -9189,6 +9194,11 @@ xdg-basedir@^4.0.0:
   version "4.0.0"
   resolved "https://registry.nlark.com/xdg-basedir/download/xdg-basedir-4.0.0.tgz?cache=0&sync_timestamp=1628184709160&other_urls=https%3A%2F%2Fregistry.nlark.com%2Fxdg-basedir%2Fdownload%2Fxdg-basedir-4.0.0.tgz#4bc8d9984403696225ef83a1573cbbcb4e79db13"
   integrity sha1-S8jZmEQDaWIl74OhVzy7y0552xM=
+
+xe-utils@3:
+  version "3.3.2"
+  resolved "https://registry.nlark.com/xe-utils/download/xe-utils-3.3.2.tgz#b05817b094a6b40d897cd8d5df62ed716ff845f5"
+  integrity sha1-sFgXsJSmtA2JfNjV32LtcW/4RfU=
 
 xtend@^4.0.0, xtend@~4.0.1:
   version "4.0.2"
