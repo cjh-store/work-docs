@@ -8,6 +8,10 @@ import Vue from 'vue'
 import 'xe-utils'
 import VXETable from 'vxe-table'
 import 'vxe-table/lib/style.css'
+import axios from 'axios'
+import qs from 'qs'
+
+Vue.prototype.axios = axios
 
 export default ({
   Vue, // VuePress 正在使用的 Vue 构造函数
