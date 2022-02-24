@@ -10,6 +10,13 @@ module.exports = [
     ],
   },
   {
+    text: "公司制度",
+    link: "/pages/955a35/",
+    items: [
+      { text: "打分规则", link: "/pages/955a35/" },
+    ],
+  },
+  {
     text: "工具类",
     link: "/pages/8a6c54/",
     items: [
