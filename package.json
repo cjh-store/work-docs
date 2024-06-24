@@ -41,5 +41,8 @@
     "commitizen": {
       "path": "node_modules/cz-customizable"
     }
+  },
+  "volta": {
+    "node": "14.21.3"
   }
 }
