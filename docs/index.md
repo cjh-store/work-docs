@@ -1,7 +1,7 @@
 ---
 home: true
 heroImage: https://cdn.jsdelivr.net/gh/xugaoyi/image_store/blog/20200409124835.png
-heroText: 前端开发文档
+heroText: 启鸣达人-前端开发文档
 tagline: 🚀一款简洁高效的VuePress 知识管理&博客 主题
 actionText: 开始使用 →
 actionLink: /pages/ace56b/
@@ -19,9 +19,4 @@ features: # 可选的
 postList: none
 ---
 
-
 <br/>
-
-
-
-
