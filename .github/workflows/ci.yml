@@ -21,7 +21,6 @@ jobs:
           node -v
           yarn config set "strict-ssl" false
           npm set strict-ssl false
-          npm uninstall node-sass
           yarn install
           yarn run build
       - name: Deploy 🚀
